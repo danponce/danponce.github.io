@@ -19,7 +19,7 @@ $(function() {
 		Parse.User.logIn(username, password, {
 		  success: function(user) {
 		    // Do stuff after successful login.
-              alert("Login exitoso!!");
+              
 		    window.location.href = "index.html";
 		    
 		  },
