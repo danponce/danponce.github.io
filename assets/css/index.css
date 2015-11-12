@@ -1,0 +1,262 @@
+.nuevo-usuario
+{
+    float: right;
+    margin-top: 23px;
+    margin-left: 8px;
+    color: white;
+    display: none;
+}
+
+.btn-nuevo
+{
+    float: left;
+    margin-top: 8px;
+    margin-left: 40px;
+    background-color: #424a5d;
+    height: 75px;
+    border-radius: 42px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.btn-nuevo:hover
+{
+    -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+       -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.fa-search
+{
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+       -o-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+    
+}
+
+.fa-search:hover
+{
+    -webkit-filter: brightness(55%);
+    
+}
+
+.fa-user-plus
+{
+    color: #ffd777;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+/* FORMULARIO NUEVO USUARIO */
+
+.contact-form
+{
+    display: none;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* PARA ARREGLAR EL BOTON DE AGREGAR FOTO*/
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.btn-foto
+{
+    background-color: #ffd777;
+    color: white;
+    position: absolute;
+    left: 440px;
+    top:15px;
+}
+
+#newuser
+{
+    width: 500px;
+    margin: auto;
+}
+
+.foto-default
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.apellido
+{
+    margin-top: 0px;
+    width: 250px;
+    position: absolute;
+    left: 400px;
+    bottom: 358px;  
+}
+
+.fa-calendar
+{
+    margin-right: 1px;
+}
+
+.fa-user
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.btn-agregar
+{
+    background-color: #68dff0;
+    color: white;
+    display: block;
+    width: 250px;
+    padding: 9px;
+    margin: auto;
+    margin-top: 17px;
+    font-size: 15px;
+}
+
+.fa-location-arrow
+{
+    margin-right: 3px;
+    margin-left: 1px;
+}
+
+.glyphicon-credit-card
+{
+    font-size: 18px;
+}
+
+.addon-rut
+{
+    padding-right: 13px;
+    padding-bottom: 5px;
+}
+
+.input-group
+{
+    margin-bottom: 9px;
+}
+
+.input-group-addon
+{
+    color: white;
+    background-color: #ffd777;
+    text-shadow: 5px 5px 5px black;
+}
+
+.icono-form
+{
+    text-shadow: 1px 1px 1px #B09452;
+
+}
+
+.nombre
+{
+    width: 246px;
+}
+
+.bautizado-div
+{
+    margin-top: 8px;
+}
+
+.bautizado
+{
+    margin-right: 22px;
+}
+
+.bautizado-si
+{
+    margin-right: 5px;
+}
+
+.discipulado-div
+{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.discipulado
+{
+    margin-right: 12px;
+}
+
+.discipulado-si
+{
+    margin-right: 5px;
+}
+
+.box-usuario
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.ultimos-usuarios
+{
+    display: none;
+    position: relative;
+    padding-top: 20px;
+}
+
+.titulo-ultimos
+{
+    position: absolute;
+    left: 80px;
+    top: -5px;    
+}
+
+.mtbox
+{
+    margin-bottom: 15px;
+}
+
+.nombre-archivo
+{
+   font-weight: bolder;
+   
+}
+
+.notif-div
+{
+    position: relative;
+}
+
+.spinner-notificaciones
+{
+    position: absolute;
+    color: white;
+    top: 41px;
+    left: 50px;
+    font-size: 18px;
+    display: none;
+}
+
+/* modificamos el icono del menu de la izquierda */
+.icono-archivo
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}

@@ -1,0 +1,197 @@
+.upbar
+{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.btn-agregar
+{
+    border-radius: 20px;
+    background-color: #424a5d;
+    color: #ffd777;
+}
+
+.btn-agregar:hover
+{
+    color: white;
+}
+
+.agregar
+{
+    display: block;
+    color: white;
+    float: right;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.file-input
+{
+    width: 400px;
+    margin: auto;
+}
+
+.glyphicon-folder-open
+{
+    margin-right: 5px;
+}
+
+.spinner-agregar
+{
+    position: absolute;
+    color: #424a5d;
+    left: 185px;
+    top: 60px;
+    display: none;
+}
+
+.fa-check
+{
+    position: absolute;
+    color: yellowgreen;
+    left: 185px;
+    top: 60px;
+    display: none;
+}
+
+.spinner-ultimos
+{
+    color: #424a5d;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+}
+
+.box2
+{
+    margin-right: 8px;
+    position: relative;
+}
+
+.box2:hover .box3 {
+	border-bottom: 1px solid #ffffff;
+}
+
+.box2 p {
+	text-align: center;
+	font-size: 12px;
+	color: #777777;
+}
+
+.box2:hover p {
+	color: #ff865c;
+}
+
+.box2:hover {
+	background: #ffffff;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.box3 {
+	padding: 3px;
+	text-align: center;
+	color: #989898;
+}
+
+.box3 span {
+	font-size: 50px;
+
+}
+
+.box3 h3 {
+	text-align: center;
+}
+
+.box3
+{
+    width: 90px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.white-panel
+{
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    height: auto;
+    min-height: 300px;
+}
+
+.white-panel i
+{
+    font-size: 65px;
+    color: #424a5d;
+}
+
+.fa-file-pdf-o
+{
+    font-size: 25px;
+    color: black;
+}
+
+.listado-archivos
+{
+    display: none;
+}
+
+.lista
+{
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    padding-left: 80px;
+}
+
+/* Efecto de hover para la descarga */
+.mask
+{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,215,119,0.95);
+    display: none;
+}
+
+.fa-download
+{
+    color: white;
+    display: block;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+.descargar
+{
+    color: #424a5d;
+    font-size: 15px;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 21%;
+}
+
+.fa-book
+{
+    font-size: 26px;
+    color: #424a5d;
+}
+
+.h5estudios
+{
+    margin-left: 6px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #424a5d;
+    font-weight: bold;
+}
+
+/* modificamos el icono del menu de la izquierda */
+.icono-archivo
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}

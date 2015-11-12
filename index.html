@@ -20,6 +20,10 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
+    <link href="assets/css/searchbar.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+    <link href="assets/icheck-1.x/skins/square/yellow.css" rel="stylesheet">
+    <link href="assets/css/jquery.selectBoxIt.css" rel="stylesheet">
 
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
     <script src="assets/js/index.login.js"></script>
@@ -188,7 +192,7 @@
             </div>
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="login.html">Logout</a></li>
+                    <li><a class="logout" href="login.html">Salir</a></li>
             	</ul>
             </div>
         </header>
@@ -204,12 +208,19 @@
               <ul class="sidebar-menu" id="nav-accordion">
               
               	  <p class="centered"><a href="profile.html"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
-              	  <h5 class="centered">Marcel Newman</h5>
+              	  <h5 class="centered">Iglesia Central</h5>
               	  	
                   <li class="mt">
                       <a class="active" href="index.html">
-                          <i class="fa fa-dashboard"></i>
-                          <span>Dashboard</span>
+                          <i class="fa fa-users"></i>
+                          <span>Miembros</span>
+                      </a>
+                  </li>
+                  
+                  <li class="sub-menu">
+                      <a href="archivos.html">
+                          <i class="fa fa-file icono-archivo"></i>
+                          <span>Archivos</span>
                       </a>
                   </li>
 
@@ -294,43 +305,114 @@
                   <div class="col-lg-9 main-chart">
                   
                   	<div class="row mtbox">
-                  		<div class="col-md-2 col-sm-2 col-md-offset-1 box0">
-                  			<div class="box1">
-					  			<span class="li_heart"></span>
-					  			<h3>933</h3>
-                  			</div>
-					  			<p>933 People liked your page the last 24hs. Whoohoo!</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_cloud"></span>
-					  			<h3>+48</h3>
-                  			</div>
-					  			<p>48 New files were added in your cloud storage.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_stack"></span>
-					  			<h3>23</h3>
-                  			</div>
-					  			<p>You have 23 unread messages in your inbox.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_news"></span>
-					  			<h3>+10</h3>
-                  			</div>
-					  			<p>More than 10 news were added in your reader.</p>
-                  		</div>
-                  		<div class="col-md-2 col-sm-2 box0">
-                  			<div class="box1">
-					  			<span class="li_data"></span>
-					  			<h3>OK!</h3>
-                  			</div>
-					  			<p>Your server is working perfectly. Relax & enjoy.</p>
-                  		</div>
-                  	
+                        <a class="btn btn-nuevo" href="#">
+                            <i class="fa fa-user-plus fa-3x"></i> <span class="nuevo-usuario">Nuevo</span></a>
+                        <form id="searchbox" action="">
+                            <input id="search" type="text" placeholder="Buscar miembro...">
+                            <button id="submit" type="submit" class="fa-search">
+                                <i class="fa fa-search fa-2x"></i>
+                            </button>
+                        </form>                 	
                   	</div><!-- /row mt -->	
+                      
+                    <div class="row contact-form">
+                        <form id="newuser" action="">
+                            <img src="assets/img/user.jpg" id="foto-default" class="img-circle foto-default" alt="Foto" width="80" height="80">
+                                                        
+                            <div class="fileUpload btn btn-default btn-foto">
+                                <span>Agregar Foto</span>
+                                <input type="file" class="upload" />
+                            </div>
+                            
+                            <div class="input-group margin-bottom-sm nombre">
+                              <span class="input-group-addon"><i class="fa fa-user fa-lg icono-form"></i></span>
+                              <input id="nombres" class="form-control nombre" type="text" placeholder="Nombres">  
+                            </div>
+                                
+                            <input id="apellidos"class="form-control apellido" type="text" placeholder="Apellidos">
+                            
+                            
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="fa fa-envelope fa-lg icono-form"></i></span>
+                              <input id="correo" class="form-control" type="email" placeholder="Correo">
+                            </div>
+                            
+                            <div class="input-group">
+                              <span class="input-group-addon addon-rut"><span class="glyphicon glyphicon-credit-card icono-form"></span></span>
+                              <input id="rut" class="form-control" type="text" placeholder="Rut">
+                            </div>
+                            
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="fa fa-location-arrow fa-lg icono-form"></i></span>
+                              <input id="direccion" class="form-control" type="text" placeholder="Dirección">
+                            </div>
+                            
+                            <div class="input-group">
+                              <span class="input-group-addon"><i class="fa fa-calendar fa-lg icono-form"></i></span>
+                              <input id="año-ingreso" class="form-control" type="text" placeholder="Año ingreso">
+                            </div>
+                            
+                            <div>
+                                <label>Fecha Nacimiento: </label>
+                                <div id="birthdayPicker"></div>
+                            </div>
+                            
+                            <div class="bautizado-div">
+                                <label class="bautizado">Bautizado?  </label>
+                                <input type="radio" id="bautizado-si" name="iCheck" value="Si">
+                                <label class="bautizado-si"> Si</label>
+                                <input type="radio" id="bautizado-no" name="iCheck" value="No">
+                                <label> No</label>
+                            </div>
+                            <div class="discipulado-div">
+                                <label class="discipulado">Discipulado?  </label>
+                                <input type="radio" id="discipulado-si" name="iCheck2" value="Si">
+                                <label class="discipulado-si"> Si</label>
+                                <input type="radio" id="discipulado-no" name="iCheck2" value="No">
+                                <label> No</label>
+                            </div>                            
+                            
+                            <input class="btn btn-agregar" type="" value="Agregar">
+                                                    
+                        </form>
+                    </div>
+                    
+                    <div class="row ultimos-usuarios">
+                        <h5 class="titulo-ultimos">Ultimos usuarios...</h2>
+                        <!--
+                      <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
+                  			<div class="box1">
+					  			<p><img src="assets/img/user.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+                  			</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 box0">
+                  			<div class="box1">
+					  			<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+                  			</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 box0">
+                  			<div class="box1">
+					  			<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+                  			</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 box0">
+                  			<div class="box1">
+					  			<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+                  			</div>
+                  		</div>
+                  		<div class="col-md-2 col-sm-2 box0">
+                  			<div class="box1">
+					  			<p><img src="assets/img/ui-zac.jpg" class="img-circle" width="80"></p>
+								<p><b>Zac Snider</b></p>
+                  			</div>
+                  		</div>
+
+                        -->
+                      </div>
                   
                       
                       <div class="row mt">
@@ -518,11 +600,12 @@
       RIGHT SIDEBAR CONTENT
       *********************************************************************************************************************************************************** -->                  
                   
-                  <div class="col-lg-3 ds">
+                  <div class="col-lg-3 ds notif-div">
+                      <span class="fa fa-circle-o-notch fa-spin spinner-notificaciones"></span>
                     <!--COMPLETED ACTIONS DONUTS CHART-->
-						<h3>NOTIFICATIONS</h3>
+						<h3 class="titulo-notificaciones">NOTIFICACIONES</h3>
                                         
-                      <!-- First Action -->
+                      <!-- First Action 
                       <div class="desc">
                       	<div class="thumb">
                       		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
@@ -533,7 +616,7 @@
                       		</p>
                       	</div>
                       </div>
-                      <!-- Second Action -->
+                      <!-- Second Action 
                       <div class="desc">
                       	<div class="thumb">
                       		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
@@ -544,7 +627,7 @@
                       		</p>
                       	</div>
                       </div>
-                      <!-- Third Action -->
+                      <!-- Third Action 
                       <div class="desc">
                       	<div class="thumb">
                       		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
@@ -555,7 +638,7 @@
                       		</p>
                       	</div>
                       </div>
-                      <!-- Fourth Action -->
+                      <!-- Fourth Action 
                       <div class="desc">
                       	<div class="thumb">
                       		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
@@ -566,7 +649,7 @@
                       		</p>
                       	</div>
                       </div>
-                      <!-- Fifth Action -->
+                      <!-- Fifth Action 
                       <div class="desc">
                       	<div class="thumb">
                       		<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
@@ -577,9 +660,10 @@
                       		</p>
                       	</div>
                       </div>
+                        -->
 
                        <!-- USERS ONLINE SECTION -->
-						<h3>TEAM MEMBERS</h3>
+						<h3 class="lista-administradores">TEAM MEMBERS</h3>
                       <!-- First Member -->
                       <div class="desc">
                       	<div class="thumb">
@@ -659,7 +743,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is
+              2015 - Dan Ponce
               <a href="index.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
@@ -671,7 +755,12 @@
     <!-- js placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery-1.8.3.min.js"></script>
-    <!--script src="assets/js/index.login.js"></script -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/icheck-1.x/icheck.js"></script>
+    <script src="assets/js/iniciariCheck.js"></script>
+    <script src="assets/js/jquery-birthday-picker.min.js"></script>
+    <script src="assets/js/jquery.selectBoxIt.js"></script>
+    <script src="assets/js/index.common.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/js/jquery.scrollTo.min.js"></script>
@@ -689,6 +778,7 @@
     <script src="assets/js/sparkline-chart.js"></script>    
 	<script src="assets/js/zabuto_calendar.js"></script>	
 	
+    <!--  
 	<script type="text/javascript">
         $(document).ready(function () {
         var unique_id = $.gritter.add({
@@ -709,6 +799,8 @@
         return false;
         });
 	</script>
+
+    -->
 	
 	<script type="application/javascript">
         $(document).ready(function () {
