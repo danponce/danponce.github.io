@@ -5,6 +5,7 @@ $( ".logout" ).click(function() {
     var currentUser = Parse.User.current();  // this will now be null
     
      window.location.href = "login.html";
+
 });
 
 $("#birthdayPicker").birthdayPicker();
@@ -341,3 +342,6 @@ function getBase64Image(img) {
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
 
+=======
+});
+>>>>>>> origin/master

@@ -8,9 +8,13 @@
     width: 500px;
     height: 75px;
     padding: 5px;
+<<<<<<< HEAD
     margin-left: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
+=======
+    margin: 10px auto 50px;
+>>>>>>> origin/master
     overflow: hidden; /* Clear floats */
 }
 
