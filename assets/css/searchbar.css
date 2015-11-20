@@ -6,20 +6,13 @@
     border-width: 1px;
     border-style: solid;
     width: 500px;
-<<<<<<< HEAD
     height: 150px;
-=======
-    height: 75px;
->>>>>>> origin/master
     padding: 5px;
     margin-left: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
     overflow: hidden; /* Clear floats */
-<<<<<<< HEAD
     color: #aeb2b7;
-=======
->>>>>>> origin/master
 }
 
 #search, 
@@ -35,35 +28,24 @@
     width: 380px;
     font: normal 16px 'trebuchet MS', arial, helvetica;
     background: #f1f1f1;
-<<<<<<< HEAD
     border-radius: 5px 5px 5px 5px;
-=======
-    border-radius: 5px 0px 0px 5px;
->>>>>>> origin/master
     border: 0px solid #424a5d;
 
     /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);   */         
 }
 
-<<<<<<< HEAD
 .fa-search-btn
 {
     padding-right: 9px;
     padding-left: 10px;
     padding-bottom: 5px;
     padding-top: 5px;
-=======
-.fa-search
-{
-    padding-right: 5px;
->>>>>>> origin/master
 }
 
 #submit
 {
     height: 43px;
     margin-top: 9px;
-<<<<<<< HEAD
     border-radius: 25px 25px 25px 25px;
     border: 1px solid #ffd777;
     background: #ffd777;
@@ -119,11 +101,3 @@
     background-color: #ffd777;
     color: #424a5d;
 }
-=======
-    border-radius: 0px 5px 5px 0px;
-    border: 1px solid #ffd777;
-    background: #ffd777;
-
-
-}
->>>>>>> origin/master
