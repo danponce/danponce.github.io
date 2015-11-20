@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 //Variables globales
 
 //Para el crop
 var x1,x2,y1,y2,w,h;
 
-=======
->>>>>>> origin/master
 $( ".logout" ).click(function() {
     
     Parse.User.logOut();
@@ -52,7 +49,6 @@ $(document).on('change', '.btn-foto :file', function() {
     
 });
 
-<<<<<<< HEAD
 /*
 *Código para agregar el archivo de la foto al modal
 */
@@ -134,8 +130,6 @@ $(document).on('change', '.btn-foto-modal :file', function() {
 
 
 
-=======
->>>>>>> origin/master
 $(document).ready( function() {
     $('.btn-foto :file').on('fileselect', function(event, numFiles, label) {
         
@@ -151,10 +145,7 @@ $(document).ready( function() {
     });
 });
 
-<<<<<<< HEAD
 //Leemos las notificaciones
-=======
->>>>>>> origin/master
 $(function() {
     
     $('.spinner-notificaciones').fadeIn();
@@ -239,7 +230,6 @@ $(function() {
         // Do something with the returned Parse.Object values
         for (var i = 0; i < results.length; i++) {
           var object = results[i]; 
-<<<<<<< HEAD
             var foto = object.get('foto');
             
     
@@ -248,35 +238,18 @@ $(function() {
                 var codigo = '<div class="col-md-2 col-sm-2 col-md-offset-1 box0 box-usuario miembro" data-toggle="modal" data-target="#myModal" miembro-id="' + object.id + '">' + 
                                 '<div class="box1">' + 
                                     '<p><img src="' + foto.url() + '" class="img-circle img-ultimo" width="80"></p>' + 
-=======
-    
-            if(flag == 0)
-            {                        
-                var codigo = '<div class="col-md-2 col-sm-2 col-md-offset-1 box0 box-usuario">' + 
-                                '<div class="box1">' + 
-                                    '<p><img src="assets/img/user.jpg" class="img-circle" width="80"></p>' + 
->>>>>>> origin/master
                                     '<p><b>' + object.get('nombre1') + " " + object.get('apellido1') + '</b></p>' + 
                                 '</div>' + 
                             '</div>';
                 $('.ultimos-usuarios').append(codigo);
-<<<<<<< HEAD
                 $('.box-usuario').fadeIn('slow');
-=======
->>>>>>> origin/master
                 flag = 1;
             }
             else
             {
-<<<<<<< HEAD
                 var codigo = '<div class="col-md-2 col-sm-2 box0 box-usuario miembro" data-toggle="modal" data-target="#myModal" miembro-id="' + object.id + '">' + 
                                 '<div class="box1">' + 
                                     '<p><img src="' + foto.url() + '" class="img-circle img-ultimo" width="80"></p>' + 
-=======
-                var codigo = '<div class="col-md-2 col-sm-2 box0 box-usuario">' + 
-                                '<div class="box1">' + 
-                                    '<p><img src="assets/img/user.jpg" class="img-circle" width="80"></p>' + 
->>>>>>> origin/master
                                     '<p><b>' + object.get('nombre1') + " " + object.get('apellido1') + '</b></p>' + 
                                 '</div>' + 
                             '</div>';
@@ -285,11 +258,7 @@ $(function() {
                     
         }
           
-<<<<<<< HEAD
           $('.ultimos-usuarios').fadeIn("slow");
-=======
-          $('.ultimos-usuarios').show("slow");
->>>>>>> origin/master
           
       },
       error: function(error) {
@@ -299,7 +268,6 @@ $(function() {
     
 });
 
-<<<<<<< HEAD
 
 //Cuando apretamos el botón buscar
 function clickBusqueda() {
@@ -728,20 +696,13 @@ $('.btn-reset').click(function() {
 var currentUser = Parse.User.current();
 
 //Agregamos un nuevo usuario
-=======
-var currentUser = Parse.User.current();
-
->>>>>>> origin/master
 $( ".btn-agregar" ).click(function() {
     
     var nombres = $('#nombres').val();
     var apellidos = $('#apellidos').val();
     var correo = $('#correo').val();
     var rut = $('#rut').val();
-<<<<<<< HEAD
     var comuna = $('#comuna').val();
-=======
->>>>>>> origin/master
     var direccion = $('#direccion').val(); 
     var añoIngreso = $('#año-ingreso').val();
     var bautizado = $('input[name=iCheck]:checked').val();
@@ -752,7 +713,6 @@ $( ".btn-agregar" ).click(function() {
     var mesFinal = mesNac-1;
     var fecha = new Date(añoNac,mesFinal,diaNac);
     
-<<<<<<< HEAD
     var mesCumple;
     switch(mesFinal) {
         case 0:
@@ -796,8 +756,6 @@ $( ".btn-agregar" ).click(function() {
     
     alert("MES CUMPLE: " + mesCumple + "MES FINAL: " + mesFinal);
     
-=======
->>>>>>> origin/master
     //Separaremos nombres y apellidos
     var arrNombres = nombres.split(' ');
     var nombre1 = arrNombres[0];
@@ -841,13 +799,9 @@ $( ".btn-agregar" ).click(function() {
     miembro.set("bautizado", bautizado);
     miembro.set("discipulado", discipulado);
     miembro.set("direccion", direccion);
-<<<<<<< HEAD
     miembro.set("comuna", comuna);
     miembro.set("fecha_nac", fecha);
     miembro.set("mes_cumpleanos", mesCumple);
-=======
-    miembro.set("fecha_nac", fecha);
->>>>>>> origin/master
     miembro.set("ano_ingreso", añoIngreso);
     miembro.set("autor", currentUser.get('username'));
     
@@ -949,11 +903,8 @@ function getBase64Image(img) {
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
 
-<<<<<<< HEAD
 
 //Para capitalizar la primera letra de la persona que se busca
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
-=======
->>>>>>> origin/master
