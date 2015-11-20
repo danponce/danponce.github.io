@@ -64,12 +64,15 @@
     margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .contact-form-modal
 {
     position: relative;
     
 }
 
+=======
+>>>>>>> origin/master
 /* PARA ARREGLAR EL BOTON DE AGREGAR FOTO*/
 
 .fileUpload {
@@ -89,6 +92,7 @@
     filter: alpha(opacity=0);
 }
 
+<<<<<<< HEAD
 .fileUpload input.upload-modal {
     position: absolute;
     top: 0;
@@ -101,6 +105,8 @@
     filter: alpha(opacity=0);
 }
 
+=======
+>>>>>>> origin/master
 .btn-foto
 {
     background-color: #ffd777;
@@ -110,6 +116,7 @@
     top:15px;
 }
 
+<<<<<<< HEAD
 .btn-foto-modal
 {
     background-color: #ffd777;
@@ -119,6 +126,8 @@
     top:15px;
 }
 
+=======
+>>>>>>> origin/master
 #newuser
 {
     width: 500px;
@@ -138,6 +147,7 @@
     width: 250px;
     position: absolute;
     left: 400px;
+<<<<<<< HEAD
     top: 92px;  
 }
 
@@ -149,6 +159,9 @@
     position: absolute;
     left: 300px;
     top: 92px;  
+=======
+    bottom: 358px;  
+>>>>>>> origin/master
 }
 
 .fa-calendar
@@ -172,6 +185,7 @@
     margin: auto;
     margin-top: 17px;
     font-size: 15px;
+<<<<<<< HEAD
     transition: background-color 0.5s ease;
 }
 
@@ -208,6 +222,8 @@
 {
     background-color: #316970;
     color: white;
+=======
+>>>>>>> origin/master
 }
 
 .fa-location-arrow
@@ -216,12 +232,15 @@
     margin-left: 1px;
 }
 
+<<<<<<< HEAD
 .fa-home
 {
     margin-right: 1px;
     margin-left: 0px;
 }
 
+=======
+>>>>>>> origin/master
 .glyphicon-credit-card
 {
     font-size: 18px;
@@ -295,6 +314,10 @@
 
 .ultimos-usuarios
 {
+<<<<<<< HEAD
+=======
+    display: none;
+>>>>>>> origin/master
     position: relative;
     padding-top: 20px;
 }
@@ -337,6 +360,7 @@
 {
     margin-left: 2px;
     margin-right: 2px;
+<<<<<<< HEAD
 }
 
 .busqueda-usuarios
@@ -536,3 +560,6 @@
     width: 800px;
     height: 500px;
 }
+=======
+}
+>>>>>>> origin/master
