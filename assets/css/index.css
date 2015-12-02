@@ -516,8 +516,13 @@
    area based on the size of the thumbnail preview,
    specified here */
 #preview-pane .preview-container {
+<<<<<<< HEAD
   width: 250px;
   height: 250px;
+=======
+  width: 150px;
+  height: 150px;
+>>>>>>> origin/master
   overflow: hidden;
 }
 
@@ -525,12 +530,19 @@
 {
     display: block;
     margin: auto;
+<<<<<<< HEAD
     width: 200px;
     height: 50px;
     background-color: #ffd777;
     color: white;
     font-weight: bold;
     font-size: 18px;
+=======
+    width: 80px;
+    height: 40px;
+    background-color: #ffd777;
+    color: white;
+>>>>>>> origin/master
 }
 
 .jcrop-preview
