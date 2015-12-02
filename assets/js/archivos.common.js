@@ -131,6 +131,7 @@ $(function() {
                                 //Una vez que se lean los datos del archivo se activa esta funcion
                                 reader.onloadend = function () {
                                     parseFile = new Parse.File(file.name, { base64: reader.result });
+                                    nombreArchivo = file.name;
                                     parseFile.save().then(function()
                                     {
                                         // The file has been saved to Parse.
@@ -403,13 +404,14 @@ $(function() {
                     var fileUploadControl = $(this).find('#uploadBtn')[0];
                     var file = fileUploadControl.files[0];
                     
-                    /*
+                    
                     var reader  = new FileReader();
                     reader.readAsDataURL(file);
 
                     //Una vez que se lean los datos del archivo se activa esta funcion
                     reader.onloadend = function () {
                         parseFile = new Parse.File(file.name, { base64: reader.result } );
+                        nombreArchivo = file.name;
                         parseFile.save().then(function()
                         {
                             // The file has been saved to Parse.
@@ -420,8 +422,8 @@ $(function() {
                         });
                     }
                     
-                    */
                     
+                    /*
                     parseFile = new Parse.File( file.name, file);
                     nombreArchivo = file.name;
                     parseFile.save().then(function() 
@@ -431,6 +433,7 @@ $(function() {
                     }, function(error) {
                         alert("Error al subir el archivo, intenta más tarde...");
                     });
+                    */
                    console.log("File = " + file.name + " Tamaño = " + file.size);
                     
                     
