@@ -1,0 +1,540 @@
+.nuevo-usuario
+{
+    float: right;
+    margin-top: 23px;
+    margin-left: 8px;
+    color: white;
+    display: none;
+}
+
+.btn-nuevo
+{
+    float: left;
+    margin-top: 8px;
+    margin-left: 40px;
+    background-color: #424a5d;
+    height: 75px;
+    border-radius: 42px;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.btn-nuevo:hover
+{
+    -webkit-transform: rotate(-15deg);
+     -moz-transform: rotate(-15deg);
+       -o-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.fa-search
+{
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+       -o-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+    
+}
+
+.fa-search:hover
+{
+    -webkit-filter: brightness(55%);
+    
+}
+
+.fa-user-plus
+{
+    color: #ffd777;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+/* FORMULARIO NUEVO USUARIO */
+
+.contact-form
+{
+    display: none;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.contact-form-modal
+{
+    position: relative;
+    
+}
+
+/* PARA ARREGLAR EL BOTON DE AGREGAR FOTO*/
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fileUpload input.upload-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.btn-foto
+{
+    background-color: #ffd777;
+    color: white;
+    position: absolute;
+    left: 440px;
+    top:15px;
+}
+
+.btn-foto-modal
+{
+    background-color: #ffd777;
+    color: white;
+    position: absolute;
+    left: 340px;
+    top:15px;
+}
+
+#newuser
+{
+    width: 500px;
+    margin: auto;
+}
+
+.foto-default
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.apellido
+{
+    margin-top: 0px;
+    width: 250px;
+    position: absolute;
+    left: 400px;
+    top: 92px;  
+}
+
+/* input de apellido del modal */
+.apellido-modal
+{
+    margin-top: 0px;
+    width: 250px;
+    position: absolute;
+    left: 300px;
+    top: 92px;  
+}
+
+.fa-calendar
+{
+    margin-right: 1px;
+}
+
+.fa-user
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.btn-agregar
+{
+    background-color: #68dff0;
+    color: white;
+    display: block;
+    width: 250px;
+    padding: 9px;
+    margin: auto;
+    margin-top: 17px;
+    font-size: 15px;
+    transition: background-color 0.5s ease;
+}
+
+.btn-agregar:hover
+{
+    background-color: #316970;
+    color: white;
+}
+
+.btn-agregar-modal
+{
+    background-color: #68dff0;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.btn-eliminar-modal
+{
+    float: left;
+    margin-left: 30px;
+    background-color: #ff865c;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.btn-eliminar-modal:hover
+{
+    background-color: #C04116;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.btn-agregar-modal:hover
+{
+    background-color: #316970;
+    color: white;
+}
+
+.fa-location-arrow
+{
+    margin-right: 3px;
+    margin-left: 1px;
+}
+
+.fa-home
+{
+    margin-right: 1px;
+    margin-left: 0px;
+}
+
+.glyphicon-credit-card
+{
+    font-size: 18px;
+}
+
+.addon-rut
+{
+    padding-right: 13px;
+    padding-bottom: 5px;
+}
+
+.input-group
+{
+    margin-bottom: 9px;
+}
+
+.input-group-addon
+{
+    color: white;
+    background-color: #ffd777;
+    text-shadow: 5px 5px 5px black;
+}
+
+.icono-form
+{
+    text-shadow: 1px 1px 1px #B09452;
+
+}
+
+.nombre
+{
+    width: 246px;
+}
+
+.bautizado-div
+{
+    margin-top: 8px;
+}
+
+.bautizado
+{
+    margin-right: 22px;
+}
+
+.bautizado-si
+{
+    margin-right: 5px;
+}
+
+.discipulado-div
+{
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.discipulado
+{
+    margin-right: 12px;
+}
+
+.discipulado-si
+{
+    margin-right: 5px;
+}
+
+.box-usuario
+{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.ultimos-usuarios
+{
+    position: relative;
+    padding-top: 20px;
+}
+
+.titulo-ultimos
+{
+    position: absolute;
+    left: 80px;
+    top: -5px;    
+}
+
+.mtbox
+{
+    margin-bottom: 15px;
+}
+
+.nombre-archivo
+{
+   font-weight: bolder;
+   
+}
+
+.notif-div
+{
+    position: relative;
+}
+
+.spinner-notificaciones
+{
+    position: absolute;
+    color: white;
+    top: 41px;
+    left: 50px;
+    font-size: 18px;
+    display: none;
+}
+
+/* modificamos el icono del menu de la izquierda */
+.icono-archivo
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.busqueda-usuarios
+{
+    width: 600px;
+    margin: auto;
+    border: 2px solid;
+    border-color: #7C8292;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background: #ffffff;
+    display: none;
+}
+
+.busqueda-usuarios img
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.busqueda-usuarios .div-usuario
+{
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-bottom: 1px solid #eaeaea
+}
+
+.busqueda-usuarios .div-usuario:hover
+{
+    color: #ff865c;
+}
+
+.div-usuario
+{
+    position: relative;
+}
+
+.usuario-nombre
+{
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+
+.usuario-nacimiento
+{
+    position: absolute;
+    top: 15px;
+    left: 167px;
+}
+
+.usuario-correo
+{
+    position: absolute;
+    top: 15px;
+    left: 247px;    
+}
+
+.usuario-bautizado
+{
+    position: absolute;
+    top: 15px;
+    left: 436px;
+    font-size: 17px;
+    color: #68dff0;
+}
+
+.usuario-discipulado
+{
+    position: absolute;
+    top: 15px;
+    left: 517px;
+    font-size: 17px;
+    color: #68dff0;
+}
+
+/* Modificamos los span del div de busqueda usuarios */
+.sp-foto
+{
+    margin-left: 10px;
+}
+
+.sp-nombre
+{
+    margin-left: 30px;
+}
+
+.sp-fecha
+{
+    margin-left: 46px;
+}
+
+.sp-correo
+{
+    margin-left: 15px;
+}
+
+.sp-bautizado
+{
+    margin-left: 125px;
+}
+
+.sp-discipulado
+{
+    margin-left: 15px;
+}
+
+/* Modificamos el titulo de los resultados de busqueda de usuarios */
+.row-titulo
+{
+    margin-bottom:  10px;
+    border-bottom: 1px solid #eaeaea
+    
+}
+
+/* Arreglamos el tamaño de la imagen de los ultimos usuarios */
+.img-ultimo
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* imagen del crop */
+#crop-img
+{
+    max-height: 800px;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.modal-img
+{
+    max-height: 800px;
+    max-height: 800px;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.crop-modal
+{
+    width: 800px;
+    max-height: 800px;
+    margin: auto;
+}
+
+#myModalCrop
+{
+    z-index: 1060;
+}
+
+.jcrop-holder #preview-pane {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  top: 10px;
+  right: -150px;
+  padding: 6px;
+  border: 1px rgba(0,0,0,.4) solid;
+  background-color: white;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* The Javascript code will set the aspect ratio of the crop
+   area based on the size of the thumbnail preview,
+   specified here */
+#preview-pane .preview-container {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.btn-crop
+{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: #ffd777;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.jcrop-preview
+{
+    width: 800px;
+    height: 500px;
+}
