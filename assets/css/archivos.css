@@ -49,13 +49,8 @@
 {
     position: absolute;
     color: yellowgreen;
-<<<<<<< HEAD
     left: -30px;
     top: 13px;
-=======
-    left: 185px;
-    top: 60px;
->>>>>>> origin/master
     display: none;
 }
 
@@ -63,14 +58,9 @@
 {
     color: #424a5d;
     position: absolute;
-<<<<<<< HEAD
     top: 15px;
     left: 750px;
     display: none;
-=======
-    top: 80px;
-    left: 400px;
->>>>>>> origin/master
 }
 
 .box2
@@ -119,10 +109,7 @@
     display: block;
     text-align: center;
     margin: auto;
-<<<<<<< HEAD
     height: 130px;
-=======
->>>>>>> origin/master
 }
 
 .white-panel
@@ -136,11 +123,7 @@
 
 .white-panel i
 {
-<<<<<<< HEAD
     font-size: 50px;
-=======
-    font-size: 65px;
->>>>>>> origin/master
     color: #424a5d;
 }
 
@@ -150,7 +133,6 @@
     color: black;
 }
 
-<<<<<<< HEAD
 .listado-carpetas
 {
     margin-bottom: 6px;
@@ -174,18 +156,6 @@
     border-radius: 4px;
     padding-left: 30px;
     padding-bottom: 10px;
-=======
-.listado-archivos
-{
-    display: none;
-}
-
-.lista
-{
-    margin-bottom: 6px;
-    padding-bottom: 6px;
-    padding-left: 80px;
->>>>>>> origin/master
 }
 
 /* Efecto de hover para la descarga */
@@ -197,10 +167,7 @@
     left: 0px;
     background-color: rgba(255,215,119,0.95);
     display: none;
-<<<<<<< HEAD
     height: 130px;
-=======
->>>>>>> origin/master
 }
 
 .fa-download
@@ -227,26 +194,18 @@
 {
     font-size: 26px;
     color: #424a5d;
-<<<<<<< HEAD
     margin-left: 20px;
-=======
->>>>>>> origin/master
 }
 
 .h5estudios
 {
-<<<<<<< HEAD
     margin-left: 15px;
-=======
-    margin-left: 6px;
->>>>>>> origin/master
     margin-bottom: 18px;
     font-size: 18px;
     color: #424a5d;
     font-weight: bold;
 }
 
-<<<<<<< HEAD
 .panel-estudios
 {
     min-height: 10px;
@@ -273,14 +232,11 @@
 }
 
 
-=======
->>>>>>> origin/master
 /* modificamos el icono del menu de la izquierda */
 .icono-archivo
 {
     margin-left: 2px;
     margin-right: 2px;
-<<<<<<< HEAD
 }
 
 .carpeta
@@ -442,6 +398,4 @@
 {
     background-color: #DEB34B;
     color: white;
-=======
->>>>>>> origin/master
 }

@@ -38,7 +38,6 @@ $(document).on('change', '.btn-foto :file', function() {
       var fr = new FileReader();
       fr.onload = function () {
           document.getElementById('foto-default').src = fr.result;
-<<<<<<< HEAD
           
           //Ahora activamos el proceso del Crop
           $('#crop-img').attr('src', fr.result);
@@ -93,8 +92,6 @@ $(document).on('change', '.btn-foto :file', function() {
             });
           }
         };
-=======
->>>>>>> origin/master
       }
       fr.readAsDataURL(files[0]);
   }
@@ -126,13 +123,10 @@ $(document).on('change', '.btn-foto-modal :file', function() {
           $('.jcrop-preview').attr('src', fr.result);
           $('.jcrop-holder img').attr('src', fr.result);
           $('#myModalCrop').modal('show');
-<<<<<<< HEAD
           
           //Avisamos si es crop para editar o nuevo miembro
           $('.btn-crop').attr('tipo-crop', 'editar');
                     
-=======
->>>>>>> origin/master
                     
               // Create variables (in this scope) to hold the API and image size
         var jcrop_api,
@@ -229,7 +223,6 @@ $(function() {
             
             var codigo;
             
-<<<<<<< HEAD
             var today = new Date();
             var createdAt = object.createdAt;
             var diffMs = (today - createdAt); // milliseconds between now & Christmas
@@ -265,8 +258,6 @@ $(function() {
                 }
             }
             
-=======
->>>>>>> origin/master
             if(tipo == "archivo")
             {
                 var notificacion = object.get('notificacion');
@@ -279,11 +270,7 @@ $(function() {
                                 '<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>' + 
                             '</div>' +
                             '<div class="details">' +
-<<<<<<< HEAD
                                 '<p><muted>' + diferencia + '</muted><br/>' +
-=======
-                                '<p><muted>2 Minutes Ago</muted><br/>' +
->>>>>>> origin/master
                                     '<a href="#">' + object.get('autor') + '</a>' +  parte1 + "archivo " + 
                                     '<span class="nombre-archivo">"' + parte2 + '"</span>' + '.<br/>' +
                                 '</p>' + 
@@ -298,11 +285,7 @@ $(function() {
                                 '<span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>' + 
                             '</div>' +
                             '<div class="details">' +
-<<<<<<< HEAD
                                 '<p><muted>' + diferencia + '</muted><br/>' +
-=======
-                                '<p><muted>2 Minutes Ago</muted><br/>' +
->>>>>>> origin/master
                                     '<a href="#">' + object.get('autor') + '</a>' +  object.get('notificacion') + '.<br/>' +
                                 '</p>' + 
                             '</div>' + 

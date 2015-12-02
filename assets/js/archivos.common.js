@@ -1,6 +1,5 @@
 var parseFile;
 
-<<<<<<< HEAD
 //Ocuparemos esta variable para el caso de agregar una nueva carpeta y tener una forma de tener un nuevo jquery selector
 var contCarpeta = 0;
 
@@ -11,14 +10,11 @@ var contSubir = 0;
 var idCarpetaSubir = 0;
 var idTipoSubir = 0;
 
-=======
->>>>>>> origin/master
 //para almacenar el nombre del archivo
 var nombreArchivo;
 
 Parse.initialize("ByL6KsOLSVjwIPsI5GEQ5ZKNTYsxDFsV5Ln6Ym93", "cZINkIPn1D5UA6apOQWghmm4pzIdZyxhB3jGxZ82");
 
-<<<<<<< HEAD
 //Ejecutamos la query para obtener los archivos
 $(function() {
     
@@ -661,114 +657,6 @@ $(function() {
 
 
 
-=======
-$(function() {
-    
-            
-    var Archivos = Parse.Object.extend("Archivos");
-    var query = new Parse.Query(Archivos);
-    // Retrieve the most recent ones
-    query.descending("createdAt");
-    query.limit(10);
-    query.find({
-      success: function(results) {
-          $('.spinner-ultimos').fadeOut();
-          $('.listado-archivos').fadeIn();
-          
-          var contador = 0;
-          var flag = 0;
-          //el codigo para añadir cada archivo
-          var codigo;
-                    
-        //alert("Successfully retrieved " + results.length + " scores.");
-        // Do something with the returned Parse.Object values
-        for (var i = 0; i < results.length; i++) {
-          var object = results[i];            
-            var archivo = object.get('archivo');
-            console.log("URL : " + archivo.url());
-            var nombre= archivo.name();
-            var nameParts = nombre.split("-");
-            var filename = nameParts[nameParts.length - 1];
-            
-            //ahora encontramos el tipo de archivo
-            var filenameParts = filename.split(".");
-            var tipo = filenameParts[1];
-            console.log("tipo: " + tipo);
-            
-            console.log("FILENAME: " + filename);
-            
-            if(tipo == "pdf")
-            {
-                codigo = '<div id="tipo ' + contador + '" class="col-md-2 col-sm-2 box2 clearfix tipo' + contador + '">' + 
-                            '<div class="box3">' + 
-                                '<p><i class="fa fa-file-pdf-o fa-3x"></i></p>' + 
-                                '<p><b>' + filename + '</b></p>' + 
-                            '</div>' + 
-                            '<div class="mask mask' + contador + '"><a href="' + archivo.url() + '" download><span class="fa fa-download fa-3x"></span><span class="descargar">Descargar</span></div></a>' + 
-                        '</div>';
-            }
-            if(tipo == "jpeg" || tipo == "jpg")
-            {
-                codigo = '<div id="tipo ' + contador + '" class="col-md-2 col-sm-2 box2 clearfix tipo' + contador + '">' + 
-                            '<div class="box3">' + 
-                                '<p><i class="fa fa-file-image-o fa-3x"></i></p>' + 
-                                '<p><b>' + filename + '</b></p>' + 
-                            '</div>' + 
-                            '<div class="mask mask' + contador + '"><a href="' + archivo.url() + '" download><span class="fa fa-download fa-3x"></span><span class="descargar">Descargar</span></div></a>' + 
-                        '</div>';
-            }
-            
-            
-            //comprobamos si ya hicimos el nuevo row
-            if(flag == 0)
-                $('.listado-archivos').append(codigo);
-            else
-                $('.listado-archivos2').append(codigo);
-            
-            AplicarMask(contador);
-            
-            contador = contador + 1;
-            if(contador == 5)
-            {
-                console.log("ENTRE A CONTADOR 3!!");
-                var nuevoRow = '</div><div class="row listado-archivos2 lista">';
-                $('.custom-check').append(nuevoRow);
-                flag = 1;
-            } 
-            if(contador == 10)
-            {
-                console.log("Entre a cont 10!!");
-                
-            }
-            
-          //alert(object.id + ' - ' + archivo.name());
-        }
-          //para guardar que mask se esta haciendo hover
-          var mask;
-          //Aplicamos esto cuando hacemos hover a un elemento
-            $('.box2').hover(
-              function() {
-                var idName = $( this ).attr( 'id' );
-                  console.log("Nombre ID: " + idName);
-                  var nroTipo = idName.split(" ");
-                  mask = "mask" + nroTipo[1];
-                  $('.mask' + nroTipo[1]).fadeIn();
-              }, function() {
-                  $('.' + mask).fadeOut();
-              }
-            );
-                    
-          var height = $('.white-panel').height();
-          console.log("Height: " + height);
-          $('.white-panel').height(height);
-      },
-      error: function(error) {
-        alert("Error: " + error.code + " " + error.message);
-      }
-    });
-});
-
->>>>>>> origin/master
 function AplicarMask()
 {
     var cont = arguments[0];
@@ -780,13 +668,8 @@ function AplicarMask()
     console.log("Mask Width = " + maskWidth);
     
     //Luego aplicamos al div mask
-<<<<<<< HEAD
     //$('.mask' + cont).height(maskHeight + 1);
     $('.mask' + cont).width(127);
-=======
-    $('.mask' + cont).height(maskHeight);
-    $('.mask' + cont).width(125);
->>>>>>> origin/master
     
 }
 
@@ -801,11 +684,7 @@ function convertHex(hex,opacity){
     return result;
 }
 
-<<<<<<< HEAD
 /*
-=======
-
->>>>>>> origin/master
 $( ".filestyle" ).change(function() {    
       
     $('.spinner-agregar').fadeIn();    
@@ -834,43 +713,27 @@ $( ".filestyle" ).change(function() {
     
 });
 
-<<<<<<< HEAD
 */
 
-=======
->>>>>>> origin/master
 var currentUser = Parse.User.current();
 
 
 function GuardarArchivo()
 {
-<<<<<<< HEAD
     var Archivo = Parse.Object.extend("Archivo");
     var archivo = new Archivo();    
     archivo.set("archivo", parseFile); 
     archivo.set("id_carpeta", idCarpetaSubir);
     archivo.set("id_tipo", idTipoSubir);
-=======
-    var Archivo = Parse.Object.extend("Archivos");
-    var archivo = new Archivo();    
-    archivo.set("archivo", parseFile); 
->>>>>>> origin/master
     archivo.set("autor", currentUser.get("username"));
     archivo.save(null, {
       success: function(archivo) {
         // Execute any logic that should take place after the object is saved.
-<<<<<<< HEAD
           $('.input' + idCarpetaSubir).val('');
           $('.spinner-' + idCarpetaSubir).fadeOut('slow');
           
           $('.fa-check-' + idCarpetaSubir).delay(200).fadeIn("slow");
           $('.fa-check-' + idCarpetaSubir).delay(1500).fadeOut("slow");
-=======
-          $('.spinner-agregar').fadeOut(); 
-          $('.fa-check').delay(200).fadeIn("slow");
-          $('.fa-check').delay(1500).fadeOut("slow");
-          $('.form-control').val("");
->>>>>>> origin/master
           
           //Creamos una nueva notificacion que el usuario agregó un nuevo archivo
           var Notificacion = Parse.Object.extend("Notificaciones");
@@ -897,7 +760,6 @@ function GuardarArchivo()
         alert('Failed to create new object, with error code: ' + error.message);
       }
     });
-<<<<<<< HEAD
 }
 
 //Para transformar los nombres escogidos de la nueva carpeta y capitalizar la primera letra
@@ -923,6 +785,4 @@ function AcortarString(str)
     var nuevaStr = string + "." + split[1];
     console.log("nueva String: " + nuevaStr);
     return nuevaStr;
-=======
->>>>>>> origin/master
 }
